@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecademy Clone by Syed Anees Ibrahim</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/src/images/tab-icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<div id="navbar">
+
+    <div class="navChildDivs navChildDiv-1">
+        <img id="logo" src="assets/src/images/logo.png" alt="logo">
+        <ul id="nav-ul">
+            <li class="navListItems">Catalog</li>
+            <li class="navListItems">Pricing</li>
+            <li class="navListItems">For Buisness</li>
+            <li class="navListItems" id="btnLogin">Log in</li>
+            <li class="navListItems" id="btnTryPro">Try Pro For Free</li>
+            <li class="navListItems" id="btnSignup">Sign up</li>
+        </ul>
+    </div>
+
+    <div class="navChildDivs navChildDiv-2">
+        <button id="loginBtn">Login</button>
+        <div id="menu-icon" class="menu-icon-bars" onclick="myFunc()"></div>
+    </div>
+
+</div>
+
+<div id="form-div">
+    <h2 id="heading-1">Get Started For Free</h2>
+    <form id="form">
+
+        <label for="email">Email</label><input class="input-e-p" id="email" type="text">
+        <label for="password">Password</label><input class="input-e-p" id="password"type="password">
+        <input id="submit-btn" type="submit" value="Start coding now">
+
+        <p id="terms-p">By signing up for Codecademy, you agree to Codecademy's <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>.</p>
+        <strong>Or, use another account:</strong>
+
+        <div id="btn-list">
+            <button class="another-acc-btns"><img id="google" src="assets/src/images/google.png" alt="google"></button>
+            <button class="another-acc-btns"><img id="linkedin" src="assets/src/images/linkedin.webp" alt="inkedin"></button>
+            <button class="another-acc-btns"><img id="facebook" src="assets/src/images/facebook.png" alt="facebook"></button>
+            <button class="another-acc-btns"><img id="github" src="assets/src/images/github.png" alt="github"></button>
+        </div>
+    </form>
+</div>
+
+
+<div id="section-after-form">
+
+    <div id="banner-01">
+        <h2 id="banner-01-title">Not sure where to <span>begin?</span></h2>
+        <p id="banner-01-p">No need to worry, we'll help you make sense of it all.</p>
+        <button id="banner-01-btn">Take Our Quiz</button>
+    </div>
+
+    <div id="some-text-banner">
+        <h1>First, we invented the best system for learning to code.</h1>
+        <h1>Seven years and 45 million learners later, we've perfected it.</h1>
+    </div>
+
+    <div id="section-steps-container">
+
+        <div class="section-steps">
+
+            <div class="counter">
+                <div class="counter-inner-circle">
+                    <div>1</div>
+                </div>
+            </div>
+            <h3 class="steps-headings">Choose what to learn</h3>
+            <img class="steps-img" src="assets/src/images/pc01.webp" alt="">
+            <p class="steps-text">From building websites to analyzing data, the choice is yours. Not sure where to start? We'll point you in the right direction.</p>
+        </div>
+
+        <div class="section-steps">
+
+            <div class="counter">
+                <div class="counter-inner-circle">
+                    <div>2</div>
+                </div>
+            </div>
+            <h3 class="steps-headings">Learn by doing</h3>
+            <img class="steps-img" src="assets/src/images/pc02.webp" alt="">
+            <p class="steps-text">No matter your experience level, you'll be writing real, working code in minutes.</p>
+        </div>
+
+        <div class="section-steps">
+
+            <div class="counter">
+                <div class="counter-inner-circle">
+                    <div>3</div>
+                </div>
+            </div>
+            <h3 class="steps-headings">Get instant feedback</h3>
+            <img class="steps-img" src="assets/src/images/pc03.webp" alt="">
+            <p class="steps-text">Your code is tested as soon as you submit it, so you always know if you're on the right track.</p>
+        </div>
+
+        <div class="section-steps">
+
+            <div class="counter">
+                <div class="counter-inner-circle">
+                    <div>4</div>
+                </div>
+            </div>
+            <h3 class="steps-headings">Put your learning into practice</h3>
+            <img class="steps-img" src="assets/src/images/pc04.webp" alt="">
+            <p class="steps-text">Apply your learning with real-world projects and test your knowledge with tailor-made quizzes.</p>
+        </div>
+
+        <div class="section-steps">
+
+            <div class="counter">
+                <div class="counter-inner-circle">
+                    <div>5</div>
+                </div>
+            </div>
+            <h3 class="steps-headings">Land your dream job</h3>
+            <img class="steps-img" src="assets/src/images/pc05.webp" alt="">
+            <p id="last-step-text" class="steps-text">Coding skills have never been more in-demand. Learn everything you need to take your career to the next level.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="section-bluish">
+
+    <img id="dots-02" src="assets/src/images/dots02.svg" alt="">
+    <img id="bars-02" src="assets/src/images/bars02.svg" alt="">
+
+    <div id="banner-02-titles">
+        <h2 id="banner-02-title-a">Tell us <span>why</span> you want to learn to code</h2>
+        <h2 id="banner-02-title-b">We’ll show you <span>what</span> to learn</h2>
+    </div>
+
+    <div id="coding-categories">
+
+        <div id="web-dev">
+
+            <div class="coding-titles">
+                <h2>Web Development</h2>
+            </div>
+            <ul class="languages l1">
+                <li>HTML/CSS</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+            <div class="coding-p">
+                Master the languages of the web: HTML, CSS, and JavaScript. This path will prepare you to build basic websites and then build interactive web apps.
+            </div>
+
+        </div>
+
+        <div id="programming-cs">
+            <div class="coding-titles">
+                <h2>Programming and Computer Science</h2>
+            </div>
+            <ul class="languages l2">
+                <li>PYTHON</li>
+                <li>CMD LINE</li>
+            </ul>
+            <div class="coding-p">
+                Learn Python fundamentals, one of the hottest and fastest growing programming languages. This is a great introduction to the world of code.            </div>
+        </div>
+
+        <div id="data-science">
+            <div class="coding-titles">
+                <h2>Data Science</h2>
+            </div>
+            <ul class="languages l3">
+                <li>PYTHON</li>
+                <li>SQL</li>
+            </ul>
+            <div class="coding-p">
+                Learn SQL and Python and build the skills you need to analyze data. Great for anyone trying to use code to be more data-driven.            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="section-last">
+    <img id="circle-chart" src="assets/src/images/circleChart.svg" alt="">
+    <h2 id="invest-title">It’s time to start investing in yourself</h2>
+    <p id="last-section-p">Because learning to code might be the easiest way to change your career.</p>
+    <button id="get-started-btn">Get Started</button>
+</div>
+
+<footer id="footer">
+    <div id="footer-p-container">
+        <p class="footer-p p1"><strong>Design credit and real website:</strong> <a href="https://www.codecademy.com/">Codecademy</a></p>
+        <p class="footer-p p1"><strong>Clone by:</strong> Syed Anees Ibrahim.</p>
+    </div>
+</footer>
+
+<h1 id="resize-heading">Resize browser window to mobile view!</h1>
+
+
+</body>
+</html>
